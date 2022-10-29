@@ -10,6 +10,14 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.site-container {
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
 #root {
   height: 100%;
 }
@@ -26,14 +34,7 @@ body {
   grid-template-rows: 5rem 1fr 5rem;
   height: 100%;
 }
-header {
-  grid-area: header;
-  background-color: #203040;
-}
-main {
-  grid-area: main;
-  padding: 1rem;
-}
+
 footer {
   grid-area: footer;
   background-color: #203040;
@@ -55,11 +56,18 @@ a:hover {
   color: #ff8000;
 }
 
-/*Header*/
+/*Header
+header {
+  grid-area: header;
+  background-color: #203040;
+}
+
 header a {
   color: #ffffff;
   padding: 1rem;
 }
+*/
+
 a.brand {
   color: #ffffff;
   font-size: 3rem;
